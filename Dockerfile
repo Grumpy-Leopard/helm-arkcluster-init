@@ -5,9 +5,9 @@ LABEL maintainer="support@grumpyleopard.com"
 WORKDIR /home/steam
 USER steam
 
-COPY --chown=steam:steam ./entrypoint.sh ./entrypoint.sh
+COPY --chown=steam:steam ./init-ark-server.sh ./init-ark-server.sh
 RUN mkdir -p /home/steam/ark/ShooterGame/Saved/SavedArks \
-    && chmod +x ./entrypoint.sh
+    && chmod +x ./init-ark-server.sh
 
 ENV CONFIGURL=""
 
