@@ -13,4 +13,4 @@ ENV CONFIGURL=""
 
 VOLUME /home/steam/ark
 
-ENTRYPOINT ["./entrypoint.sh"]
+CMD ["./init-ark-server.sh"]
